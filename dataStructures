@@ -1,0 +1,87 @@
+Problem 1 - Solution with an array:
+
+Define two arrays: set1 and set2.
+Initialize an empty array named 'distinct_elements'.
+Loop through each element of set1 and set2 and check if it is present in the 'distinct_elements' array. If it is not present in the array, then add the element to it and also add the element to the 'sum' variable.
+Return the value of 'sum'.
+Here's the algorithm:
+
+Function sumDistinct(set1, set2)
+    distinct_elements = []
+    sum = 0
+
+    For element in set1:
+        If element not in distinct_elements:
+            Append element to distinct_elements
+            Add element to sum
+
+    For element in set2:
+        If element not in distinct_elements:
+            Append element to distinct_elements
+            Add element to sum
+
+    Return sum
+End Function
+
+Problem 1 - Solution with an array:
+
+Define two arrays: set1 and set2.
+Initialize an empty array named 'distinct_elements'.
+Loop through each element of set1 and set2 and check if it is present in the 'distinct_elements' array. If it is not present in the array, then add the element to it and also add the element to the 'sum' variable.
+Return the value of 'sum'.
+Here's the algorithm:
+
+mathematica
+Copy code
+Function sumDistinct(set1, set2)
+    distinct_elements = []
+    sum = 0
+
+    For element in set1:
+        If element not in distinct_elements:
+            Append element to distinct_elements
+            Add element to sum
+
+    For element in set2:
+        If element not in distinct_elements:
+            Append element to distinct_elements
+            Add element to sum
+
+    Return sum
+End Function
+Problem 2 - Solution with an array and a procedure:
+
+Define a procedure named 'dot_product' that takes two arrays as parameters and returns the dot product of the two vectors.
+Define a function named 'is_orthogonal' that takes two arrays as parameters and calls the 'dot_product' procedure to find the dot product of the two vectors.
+If the dot product is zero, return True (vectors are orthogonal) else return False.
+Loop through each pair of vectors and call the 'is_orthogonal' function to determine if they are orthogonal.
+Here's the algorithm:
+
+Procedure dot_product(vector1, vector2)
+    sum = 0
+
+    For i = 0 to vector1.length-1:
+        product = vector1[i] * vector2[i]
+        sum = sum + product
+
+    Return sum
+End Procedure
+
+Function is_orthogonal(vector1, vector2)
+    dot_product_value = dot_product(vector1, vector2)
+
+    If dot_product_value == 0:
+        Return True
+    Else:
+        Return False
+End Function
+
+Function check_orthogonal(vectors)
+    For i = 0 to vectors.length-1:
+        For j = i+1 to vectors.length-1:
+            If is_orthogonal(vectors[i], vectors[j]):
+                Print "Vectors", vectors[i], "and", vectors[j], "are orthogonal"
+            Else:
+                Print "Vectors", vectors[i], "and", vectors[j], "are not orthogonal"
+    End For
+End Function
